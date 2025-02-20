@@ -38,7 +38,7 @@ class CustomErrorWidget extends StatelessWidget {
     return Center(
       child: Container(
         decoration: BoxDecoration(
-          color: backgroundColor,
+          color: AppColors.backgroundColor,
           borderRadius: Corners.rounded15,
         ),
         height: height,

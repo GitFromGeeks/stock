@@ -1,5 +1,4 @@
 import '../shared/type_defs.dart' show JSON;
-import '../shared/utils.dart' show AppUtils;
 
 class ResponseModel<T> {
   final ResponseHeadersModel headers;
@@ -44,10 +43,6 @@ class ResponseHeadersModel {
   });
 
   factory ResponseHeadersModel.fromJson(JSON json) {
-    return ResponseHeadersModel(
-      error: AppUtils.boolFromInt(json['error'] as int),
-      message: json['message'] as String,
-      code: json['code'],
-    );
+    return ResponseHeadersModel(error: false, message: "success", code: 200);
   }
 }

@@ -74,7 +74,20 @@ class DioService {
       options: options,
       cancelToken: cancelToken ?? _cancelToken,
     );
-    return ResponseModel<R>.fromJson(response.data!);
+    if (response.data!["headers"] != null) {
+      return ResponseModel<R>.fromJson(response.data!);
+    } else {
+      ResponseHeadersModel header = ResponseHeadersModel(
+        error: false,
+        message: "Success",
+        code: 200,
+      );
+      ResponseModel<R> responseModel = ResponseModel(
+        headers: header,
+        body: response.data as R,
+      );
+      return responseModel;
+    }
   }
 
   Options? _mergeDioAndCacheOptions({

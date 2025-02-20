@@ -32,9 +32,10 @@ class WelcomePage extends ConsumerWidget {
               ),
               Text(
                 "Stock App",
-                style: AppTypography.primary.heading34.copyWith(
+                style: AppTypography.primary.body14.copyWith(
                   color: AppColors.primaryColor,
-                  fontSize: 60,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
 

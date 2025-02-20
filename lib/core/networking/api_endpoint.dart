@@ -16,7 +16,19 @@ class ApiEndpoint {
       case AuthEndpoint.REFRESH_TOKEN:
         return "$path/refresh_token";
       case AuthEndpoint.LOGIN:
-        return "$path/local";
+        return "$path/local/";
+    }
+  }
+
+  //------------------------>  STOCKS  <-------------------------------
+
+  static String stocks(StockEndpoint endpoint) {
+    const path = '/stocks';
+    switch (endpoint) {
+      case StockEndpoint.BASE:
+        return "$path/";
+      case StockEndpoint.SEARCH_STOCK:
+        return "$path/search";
     }
   }
 }
@@ -24,3 +36,5 @@ class ApiEndpoint {
 //------------------------>  AUTHENTICATION  <-------------------------------
 
 enum AuthEndpoint { LOGIN, REFRESH_TOKEN }
+
+enum StockEndpoint { BASE, SEARCH_STOCK }

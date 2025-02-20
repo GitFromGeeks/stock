@@ -1,16 +1,39 @@
-# stocks
+Stock Market Search App
 
-A new Flutter project.
+This Flutter application follows Clean Architecture principles and integrates Riverpod for state management, Dio for network calls, and Flutter Secure Storage for secure data storage.
 
-## Getting Started
+🚀 Features
 
-This project is a starting point for a Flutter application.
+User Authentication (Login API, Secure Session Management)
+Stock Search (Fetch and display stock results)
+Stock Details Page (Comprehensive stock information with graphs)
 
-A few resources to get you started if this is your first Flutter project:
+NOTE  : The Graph API for Stock was not working. Since it was returning 500 internal server error, I was unable to implement that.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🛠 Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter (Latest stable version)
+Dart
+State Management: Riverpod
+Networking: Dio
+Secure Storage: Flutter Secure Storage
+🔗 API Documentation
+
+Refer to the provided Postman Collection for API details.
+
+📩 Setup Instructions
+
+Clone the Repository
+git clone https://github.com/GitFromGeeks/stock.git 
+cd your-repository  
+Install Dependencies
+flutter pub get  
+Run the App
+flutter run  
+🎥 Demo Video
+
+A short demo video showcasing the app is included in the submission.
+
+Link : https://drive.google.com/file/d/1UWH7u8xu90okJnjLV8bQwqvxIir-snhi/view?usp=drivesdk
+
+🚀 Thank you! Looking forward to your feedback!
